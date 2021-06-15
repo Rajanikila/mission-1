@@ -8,6 +8,7 @@
 body{
     font-family: "Merriweather", sans-serif;
     background-color: #ebf2ff;
+    overflow-x: hidden;
 }
 
 
@@ -19,11 +20,12 @@ body{
        padding:12px;
        border:none;
        border-radius:6px;
+       cursor:pointer;
 }
 
 .container{
     width: 100%;
-    margin: 0 auto;
+    margin:  0 auto;
     padding: 0 15px;
 }
 
@@ -53,21 +55,37 @@ body{
     width:100%;
 }
 
+.hero__text{
+    font-size:30px;
+    color:#1d3557;
+    margin:20px 0;
+}
+
+/*Menu Styles */
+
+.food__menu__card{
+    width:100%;
+}
+
+.food__image{
+    width:100%;
+}
 
 @media (min-width:768px){
-
-    .button__primary{
-        justify-content: space-between;
+    .navbar{
+        justify-content:space-between;
         padding:10px 20px;
     }
+
     .navbar__brand{
         width:150px;
     }
-    .nav__item{
-        padding:20px;
+
+    .button__primary{
+        padding:12px 20px;
         font-size:20px;
     }
-
+    
     .hero__container{
         display:flex;
         flex-direction: row-reverse;
@@ -78,17 +96,19 @@ body{
 }
 
 @media (min-width:1020px){
-    .container{
-        max-width: 1010px;
+    
+    .hero__text{
+        font-size:40px;
     }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
-
+    .container{
+        max-width:1010px;
     }
 
 }
 
 @media (min-width:1400px){
+    .container{
+        max-width:1250px;
+    }
 
 }
